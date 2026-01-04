@@ -40,7 +40,7 @@ def main(page:ft.Page):
         {'value': 'frango com catupiry', 'preco': '20,00',},
         {'value': 'frango com cheddar', 'preco': '20,00',},
         {'value': 'calabresa com queijo', 'preco': '20,00',},
-        {'value': 'camarão cremoso', 'preco': '20,00',},
+        {'value': 'camarão cremoso', 'preco': '25,00',},
     ]
 
     page.bgcolor = ft.Colors.BLACK
@@ -659,11 +659,11 @@ def main(page:ft.Page):
                         dados = (f"{num_mesa.value}", string_pedido, True, False, f"{total.spans[1].text}")
                         # Conexão (use os mesmos parâmetros do seu script)
                         conn = psycopg2.connect(
-                            host="dpg-d57jh96uk2gs73d3dbk0-a.oregon-postgres.render.com",
+                            host="dpg-d5dcgff5r7bs73bslgv0-a.oregon-postgres.render.com",
                             port="5432",
-                            database="bd_sherlon_ulac",
-                            user="bd_sherlon_ulac_user",
-                            password="synMXbst2UAOQJQJMWKNvUlRFHSGnfBd"
+                            database="sherlon",
+                            user="sherlon_user",
+                            password="46e0JjiySvfkIxaOcJdrJqZzbpq7Svyc"
                         )
                         cursor = conn.cursor()
                         # Comando SQL

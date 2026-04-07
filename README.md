@@ -23,7 +23,7 @@ Finalizar pedido pelo próprio app que tem outra interface integrada para o gere
 
 • python
 • flet
-• psycopg
+• psycopg2
 • PostgreSQL 
 
 🚀 Instalação Rápida
